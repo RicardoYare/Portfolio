@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+body {
+    background-color: #FAF7F0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Reddit Mono", monospace;
+    background-color: #0D0D0D;
+    overflow-x: hidden;
+}
+
+.mainComponent {
+
+    top: 0%;
+    left: 0%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: -1;
+    background-image: url("../img/img01.png");
+    background-repeat: repeat;
+    background-size: 50%;
+
+    /* transition: all linear 1s; */
+    animation: moving 45s infinite linear;
+}
+
+@keyframes moving {
+
+    100% {
+
+        background-position: 100% 0%;
+
+    }
+}
+
+#contacto {
+
+    position: fixed;
+    top: 100px;
+    width: 500px;
+    height: 500px;
+    background-color: #FAF7F0;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px 1px #C5C3BD;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+    left: -600px;
+
+    transition: 0.8s all;
+
+}
+
+button {
+    border: none;
+}
+
+#overContacto {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    opacity: 40%;
+
+    visibility: hidden;
+
+}
+
+#headerContacto {
+
+    grid-area: 1 / 1 / 1 / 5;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #E6D8B8;
+    background-color: #F1E9D6;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#closeContact {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 5px solid #DCCEB0;
+
+    background-image: url("../img/miniButs/x.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#closeContact:hover {
+
+    cursor: pointer;
+    background-color: #C9BDA3;
+}
+
+.contactBarGroup {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactBarra {
+    width: 90%;
+    height: 4px;
+    border-top: 2px solid #FAF7F0;
+    border-bottom: 3px solid #E6D8B8;
+}
+
+#contactTitulo {
+
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+    font-weight: 600;
+    font-size: 18px;
+    color: #4B4A58;
+}
+
+#formulario {
+
+    grid-area: 2 / 1 / 9 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#formEmail,
+#formName,
+#formMensaje {
+
+    width: 350px;
+    height: 40px;
+    margin-top: 30px;
+
+    font-family: "Reddit Mono", monospace;
+    font-weight: 600;
+    color: #4B4A58;
+
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 14px;
+
+    border: 1px #C9BDA3 solid;
+
+    text-align: center;
+}
+
+#formMensaje {
+
+    height: 150px;
+    resize: none;
+
+    padding: 10px;
+}
+
+#botonForm {
+
+    margin-top: 20px;
+
+    background: linear-gradient(90deg, rgba(66, 213, 182, 1) 0%, rgba(66, 213, 182, 1) 53%, rgba(255, 202, 186, 1) 54%, rgba(255, 202, 186, 1) 100%);
+    background-position: -330px 0px;
+    background-size: 240%;
+
+    height: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    color: #4B4A58;
+    font-weight: bold;
+
+    transition: all 1s;
+
+}
+
+
+
+#botonForm:hover {
+    background-position: 0px 0px;
+    color: white;
+    cursor: pointer;
+}
+
+
+input:focus,
+textarea:focus {
+    outline: none;
+    /* Ensure outline is removed on focus */
+    border-color: #ccc;
+    /* Keep border color the same */
+    box-shadow: none;
+    /* Remove any shadow on focus */
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    opacity: 20%;
+}
+
+/*************************************/
+
+#curriculum {
+
+
+    position: fixed;
+    top: -900px;
+    width: 700px;
+    height: 700px;
+    background-color: #FAF7F0;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px 1px #C5C3BD;
+
+    transition: 0.8s all;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+}
+
+#overCv {
+
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    opacity: 40%;
+    visibility: hidden;
+
+}
+
+#estudios {
+
+    grid-area: 2 / 1 / 6 / 5;
+}
+
+#complem {
+
+    grid-area: 6 / 1 / 11 / 5;
+}
+
+#exp {
+
+    grid-area: 11 / 1 / 15 / 5;
+}
+
+.campo {
+
+    padding-top: 40px;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+
+}
+
+li {
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+.area {
+    font-weight: 700;
+    opacity: 70%;
+    grid-area: 1 / 1 / 2 / 16;
+    text-align: center;
+}
+
+.lista {
+    grid-area: 2 / 1 / 8 / 16;
+    opacity: 70%;
+    list-style-type: none;
+    text-align: center;
+
+}
+
+#mensajeConf {
+
+
+    position: absolute;
+    background-color: #42D5B6;
+    height: 75px;
+    width: 125px;
+    left: 720px;
+    border-radius: 7px;
+
+    top: 300px;
+
+    font-size: 14px;
+    font-weight: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;   
+    visibility: hidden;
+}
+
+
+@keyframes conf {
+    0% {
+       
+        transform: scale(0.8);
+    }
+
+    50% {
+        
+        transform: scale(1.5);
+
+    }
+
+    100% {
+
+       
+        transform: scale(0.8);
+    }
+
+}

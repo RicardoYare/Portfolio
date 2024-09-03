@@ -1,0 +1,52 @@
+.headerBody{
+    grid-area: 1 / 1 / 2 / 15;
+    background-color: #F1E9D6;
+    border-bottom: 1px solid #E6D8B8;
+    display: flex;           
+    border-radius: 10px 10px 0 0; 
+}
+
+.groupCircle{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: #FFCABA;
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: 0 2px 1px 0 #FF825C;
+}
+
+.divTitle{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 80%;
+    font-weight: 600;
+    font-size: 18px;
+    color: #4B4A58;
+}
+
+.barGroup {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra {
+    width: 98%;
+    height: 4px;
+    border-top: 2px solid #FAF7F0;
+    border-bottom: 3px solid #E6D8B8;
+}

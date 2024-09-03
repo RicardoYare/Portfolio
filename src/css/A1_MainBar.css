@@ -1,0 +1,83 @@
+.mainBar{
+
+    background-color: #F1E9D6;
+    border-bottom: 3px solid #c9bda3;
+    width: 100vw;
+    height: 30px;
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.menuBoton{
+
+    /* font-family: 'Courier New', Courier, monospace; */
+    opacity: 80%;
+    margin: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #4B4A58;
+    padding: 7px;
+    transition: 0.3s all;
+
+    height: 40%;
+    width: fit-content;       
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuBoton:hover{
+
+    cursor: pointer;
+    background-color: #C9BDA3;
+    color: white;
+
+}
+
+
+#butIdioma:hover{
+    cursor: pointer;
+    background-color: #C9BDA3;
+}
+
+#butIdioma{
+
+    width: 40px;
+    height: 20px;
+    padding: 4px 20px;
+    margin-left: 2px;
+    
+    max-width: 40px;
+    max-height: 20px;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
+#carru{
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 30px;
+    min-width: 200px;   
+    
+    left: 49px;
+
+    transition: 1s all;
+}
+#spain, #uk{
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+}
